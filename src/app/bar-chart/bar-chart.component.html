@@ -1,0 +1,18 @@
+<p>bar-chart works!</p>
+<div>
+  <canvas id="bar-chart" ></canvas>
+</div>
+<div style="height: 300px;color:rgb(233, 55, 79)">
+  <ngx-charts-bar-vertical
+    [results]="data"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="X-Axis Label"
+    yAxisLabel="Y-Axis Label">
+  </ngx-charts-bar-vertical>
+</div>
+<!-- Include the year filter component and pass the selectedYear variable -->
+<app-year-filter (filterChange)="onYearFilterChange($event)"></app-year-filter>
